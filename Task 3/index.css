@@ -1,0 +1,180 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #afa56bc4;
+
+}
+
+.head {
+    background: #a16f49f5;
+    width: 100%;
+    height: 75px;
+    color: white;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    
+}
+
+.left-div {
+    width: 50%;
+    float: left;
+    border-right: 4px solid #bd875df5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.right-div {
+    width: 49%;
+    float: right;
+}
+
+.right-div p{
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+table {
+    width: 50%;
+}
+
+table,tr,td {
+    border: 5px solid transparent;
+}
+
+tr td:nth-child(1){
+    width: 25%;
+}
+
+input[type='radio']{
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+  
+}
+
+input[type='checkbox']{
+    width: 15px;
+    height: 15px;
+}
+
+.submit{
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    border: 0px;
+    background-color: rgb(163, 115, 74);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.submit:hover{
+    background: rgb(66, 141, 79);
+    color: black;
+}
+
+.reset{
+     width: 120px;
+    height: 45px;
+    font-size: 20px;
+    border: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 40px;
+}
+
+.reset:hover{
+    background: rgb(175, 30, 30);
+}
+
+.enroll td {
+    padding-top: 20px;
+}
+
+input[type='text'],input[type='email'],input[type='url']{
+    outline: none;
+    border: 2px solid #a1a1a1;
+    border-radius: 3px;
+    height: 30px;
+    width: 220px;
+    font-size: 14px;
+}
+
+.skill td {
+    padding-top: 20px;
+}
+
+.tab2,.tab2 th,.tab2 td,.tab2 tr{
+    border: 2px solid rgb(68, 156, 95);
+    border-collapse: collapse;
+}
+
+thead{
+    text-align: left;
+    background-color: rgb(68, 156, 95);
+    color: white;
+    font-size: 19px;
+}
+
+#tab2,#th2,#tb2{
+    text-align: left;
+}
+
+#th2 th{
+    padding: 5px;
+}
+#tb2>tr td:nth-child(1){
+    width: 75%;
+}
+
+#tb2>tr td:nth-child(2){
+     width: 25%;
+}
+
+#tab2{
+    margin: 0 auto;
+    width: 75%;
+    white-space: pre;
+    margin-bottom: 15px;
+    background-color: rgb(210, 248, 193);
+}
+
+.tcenter{
+    margin: 0 auto;
+}
+
+.hrline{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .left-div,.right-div{
+        width: 100%;
+     }
+    .tcenter{
+        margin: 0 auto;
+    }
+    .hrline{
+        display: block;
+        height: 3px;
+        outline: none;
+    }
+}

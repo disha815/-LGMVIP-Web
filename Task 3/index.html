@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div class="head">
+        <h1>Student Enrollment Form</h1>
+    </div>
+    <div class="main">
+        <div class="left-div">
+            <form name="myform">
+                <table class="tcenter">
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" id="name" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td><input type="url" id="web" autocomplete="off" ></td>
+                    </tr>
+                    <tr>
+                        <td>Image Link</td>
+                        <td><input type="url" id="image" autocomplete="off"></td>
+                    </tr>
+                    <tr class="skill">
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" id="gen1" name="gender" value="Male">&nbsp;<label>Male</label><br>
+                            <input type="radio" id="gen2" name="gender" value="Female">&nbsp;<label>Female</label><br>
+                            <input type="radio" id="gen3" name="gender" value="others">&nbsp;<label>Others</label>
+
+                        </td>
+                    </tr>
+                    <br>
+                    <tr class="skill">
+                        <td>Skills</td>
+                        <td>
+                            <input class="skill" type="checkbox" id="java" value="Java"
+                                checked />&nbsp;<label>Java</label>
+                            <input class="skill" type="checkbox" id="html" value="HTML">&nbsp;<label>HTML</label>
+                            <input class="skill" type="checkbox" id="css" value="CSS">&nbsp;<label>CSS</label>
+                        </td>
+                    </tr>
+                    <tr class="enroll">
+                        <td><input type="button" name="submit" class="submit" id="submit" value="Enroll Student"
+                                onclick="enroll()"></td>
+                        <td><input type="reset" name="reset" class="reset" value="Clear"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <hr class="hrline">
+        <div class="right-div" id="right-div">
+
+            <p>Enrolled Students</p>
+
+            <br><br>
+            <table class="tab2" id="tab2">
+                <thead id="th2">
+                    <th>Description</th>
+                    <th>Image</th>
+                </thead>
+                <tbody id="tb2">
+                    <tr style="text-align: center;" id="empty">
+                        <td colspan="2">No data available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
